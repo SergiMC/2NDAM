@@ -1,6 +1,7 @@
 package Exercici_reforç_de_1r;
 
 import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 
 
 public class Oficial extends Tripulant {
@@ -29,6 +30,17 @@ public class Oficial extends Tripulant {
 		this.serveiEnElPont = serveiEnElPont;
 		this.descripcioFeina = descripcioFeina;
 	}
+	
+	protected void imprimirDadesTripulant(){
+		DateTimeFormatter formatData = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm");
+        
+        System.out.println("Dades Tripulant: \n" + " Bandol: " + bandol + "\n " 
+        + "ID" + super.ID + "\n Nom: " + nom + "\n Actiu: " + actiu + "\n Departament: " 
+        + departament + "\n LlocDeServei: " + super.getLlocDeServei()+ "\n Descripcio feina: " +
+        descripcioFeina + "\n Serveix en pont: " + isServeiEnElPont() + "\n Data Alta: " 
+        + dataAlta.format(formatData));
+        
+        }
 	
 	
 	

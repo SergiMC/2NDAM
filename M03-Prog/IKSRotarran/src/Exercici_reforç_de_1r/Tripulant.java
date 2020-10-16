@@ -2,7 +2,9 @@ package Exercici_reforç_de_1r;
 
 import java.time.LocalDateTime;
 
-public class Tripulant {
+
+
+public abstract class Tripulant {
 	protected static final String bandol = "Imperi Klingon";
 	protected String ID;
 	protected String nom;
@@ -28,6 +30,7 @@ public class Tripulant {
 		this.departament = departament;
 		this.llocDeServei = llocDeServei;
 	}
-
-
+	
+	
+	
 }
