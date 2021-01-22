@@ -1,1 +1,7 @@
-## PROJECTES 2N DAM
+## Les Lleis de Gestalt
+
+2n DAM
+Sergi Muñoz Carmona
+
+
+
